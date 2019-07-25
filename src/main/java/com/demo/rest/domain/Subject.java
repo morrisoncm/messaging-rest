@@ -1,7 +1,5 @@
 package com.demo.rest.domain;
 
-import java.time.LocalDateTime;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -10,18 +8,18 @@ public class Subject {
 	@NotBlank(message = "Subject name is required")
 	@Size(max = 50, message = "Subject name cannot be greater than 50")
 	private String subjectName;
-	private LocalDateTime startTime;
-	private LocalDateTime endTime;
+	@NotBlank(message = "Subject description is required")
+	@Size(max = 250, message = "Subject description cannot be greater than 250")
+	private String subjectDescription;
 
 	public Subject() {
 		super();
 	}
 
-	public Subject(String subjectName, LocalDateTime startTime, LocalDateTime endTime) {
+	public Subject(String subjectName, String subjectDescription) {
 		super();
 		this.subjectName = subjectName;
-		this.startTime = startTime;
-		this.endTime = endTime;
+		this.subjectDescription = subjectDescription;
 	}
 
 	public String getSubjectName() {
@@ -32,57 +30,36 @@ public class Subject {
 		this.subjectName = subjectName;
 	}
 
-	public LocalDateTime getStartTime() {
-		return startTime;
+	public String getSubjectDescription() {
+		return subjectDescription;
 	}
 
-	public void setStartTime(LocalDateTime startTime) {
-		this.startTime = startTime;
-	}
-
-	public LocalDateTime getEndTime() {
-		return endTime;
-	}
-
-	public void setEndTime(LocalDateTime endTime) {
-		this.endTime = endTime;
+	public void setSubjectDescription(String subjectDescription) {
+		this.subjectDescription = subjectDescription;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((endTime == null) ? 0 : endTime.hashCode());
-		result = prime * result + ((startTime == null) ? 0 : startTime.hashCode());
+		result = prime * result + ((subjectName == null) ? 0 : subjectName.hashCode());
 		return result;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-		if (getClass() != obj.getClass()) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
-
 		Subject other = (Subject) obj;
-		if (endTime == null) {
-			if (other.endTime != null)
+		if (subjectName == null) {
+			if (other.subjectName != null)
 				return false;
-		} else if (!endTime.equals(other.endTime)) {
+		} else if (!subjectName.equals(other.subjectName))
 			return false;
-		}
-		if (startTime == null) {
-			if (other.startTime != null) {
-				return false;
-			}
-		} else if (!startTime.equals(other.startTime)) {
-			return false;
-		}
 		return true;
 	}
 }
