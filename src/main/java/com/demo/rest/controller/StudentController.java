@@ -1,4 +1,4 @@
-package com.demo.restapi.controller;
+package com.demo.rest.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.restapi.domain.Student;
-import com.demo.restapi.service.StudentService;
+import com.demo.rest.domain.Student;
+import com.demo.rest.service.StudentService;
 
 @RestController 
 @RequestMapping("/students")

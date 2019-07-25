@@ -1,4 +1,4 @@
-package com.demo.restapi.domain;
+package com.demo.rest.domain;
 
 import java.time.LocalDateTime;
 

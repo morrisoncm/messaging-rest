@@ -1,4 +1,4 @@
-package com.demo.restapi.controller;
+package com.demo.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,9 +17,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import com.demo.restapi.domain.Student;
-import com.demo.restapi.domain.Subject;
-import com.demo.restapi.service.StudentService;
+import com.demo.rest.controller.StudentController;
+import com.demo.rest.domain.Student;
+import com.demo.rest.domain.Subject;
+import com.demo.rest.service.StudentService;
 import com.google.gson.Gson;
 
 @ExtendWith(SpringExtension.class)

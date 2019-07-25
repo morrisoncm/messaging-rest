@@ -1,14 +1,14 @@
-package com.demo.restapi.service.impl;
+package com.demo.rest.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.demo.restapi.dao.StudentDao;
-import com.demo.restapi.domain.Student;
-import com.demo.restapi.exception.StudentExistsException;
-import com.demo.restapi.service.StudentService;
+import com.demo.rest.dao.StudentDao;
+import com.demo.rest.domain.Student;
+import com.demo.rest.exception.StudentExistsException;
+import com.demo.rest.service.StudentService;
 
 @Service
 public class StudentServiceImpl implements StudentService {

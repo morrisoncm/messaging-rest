@@ -1,8 +1,8 @@
-package com.demo.restapi.service;
+package com.demo.rest.service;
 
 import java.util.List;
 
-import com.demo.restapi.domain.Student;
+import com.demo.rest.domain.Student;
 
 public interface StudentService {
 

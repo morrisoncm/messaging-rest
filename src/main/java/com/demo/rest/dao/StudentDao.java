@@ -1,4 +1,4 @@
-package com.demo.restapi.dao;
+package com.demo.rest.dao;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.demo.restapi.domain.Student;
-import com.demo.restapi.domain.Subject;
+import com.demo.rest.domain.Student;
+import com.demo.rest.domain.Subject;
 
 @Repository
 public class StudentDao {
