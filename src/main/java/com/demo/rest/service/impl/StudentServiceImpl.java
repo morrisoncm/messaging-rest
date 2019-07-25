@@ -28,4 +28,20 @@ public class StudentServiceImpl implements StudentService {
 		}
 		studentDao.registerStudent(student);
 	}
+
+	@Override
+	public Student getStudent(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateProfile(Student student) {
+		// TODO Auto-generated method stub	
+	}
+
+	@Override
+	public void deleteProfile(Student student) {
+		// TODO Auto-generated method stub	
+	}
 }
