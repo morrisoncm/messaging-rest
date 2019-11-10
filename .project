@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>intro-gradle-rest</name>
-	<comment>Project intro-gradle-rest created by Buildship.</comment>
+	<name>template-rest</name>
+	<comment>Project template-rest created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
