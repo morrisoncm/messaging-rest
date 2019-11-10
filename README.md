@@ -1,4 +1,4 @@
-# gradlerestapi
+# template-rest
 Sample Gradle Spring Boot Rest API with Junit 5. 
 <https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html>  
 <https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Service.html>  
