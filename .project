@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>template-rest</name>
-	<comment>Project template-rest created by Buildship.</comment>
+	<name>messaging-rest</name>
+	<comment>Project messaging-rest created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
