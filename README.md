@@ -4,7 +4,7 @@ Sample Gradle Spring Boot Rest API with Junit 5.
 <https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Service.html>  
 
 ## Running the application
-To run the application from the command line change to  the project root directory and simply run gradle bootRun.
+To run the application from the command line change to  the project root directory and simply type gradle bootRun.
 To run the application inside Eclipse.
 Simply clone or download the project. 
 The main starting point for the application is <https://github.com/morrisoncm/gradlerestapi/blob/master/src/main/java/com/demo/rest/Application.java>.
