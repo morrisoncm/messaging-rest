@@ -4,7 +4,8 @@ Sample Gradle Spring Boot Rest API with Junit 5.
 ### Workspace setup
 - [Download java](https://jdk.java.net/archive/)
 - [Configuring Java](https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html)  
-- [Download Eclipse](https://www.eclipse.org/downloads/packages/)  
+- [Download Eclipse](https://www.eclipse.org/downloads/packages/)
+- [Visual Studio Code](https://code.visualstudio.com/docs/java/java-springboot) 
 - [Download and Install Gradle](https://docs.gradle.org/current/userguide/installation.html)  
 - [Download and install Postman](https://www.getpostman.com/downloads/)
 
