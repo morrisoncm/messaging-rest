@@ -9,6 +9,12 @@ Sample Gradle Spring Boot Rest API with Junit 5.
 - [Download and Install Gradle](https://docs.gradle.org/current/userguide/installation.html)  
 - [Download and install Postman](https://www.getpostman.com/downloads/)
 
+### Spring Reference
+- [Spring Getting Started Guides](https://spring.io/guides#getting-started-guides)
+- [Spring Topical Guides](https://spring.io/guides#topical-guides)
+- [Spring Tutorials](https://spring.io/guides#tutorials)
+- [Gradle Guildes](https://gradle.org/guides/)
+
 ### Running the application
 - Clone or download the project  
 - To run the application from Terminal / Command Prompt   
@@ -20,11 +26,5 @@ Sample Gradle Spring Boot Rest API with Junit 5.
 ### Testing the application
 - The test scripts are under the project root directory in the postman folder
 - Run in Terminal to test **curl --noproxy '*' --location --request POST 'http://127.0.0.1:8080/greetings' --header 'Content-Type: application/json' --data-raw '{"firstname": "Clinton", "lastname": "Morrison"}'**
-
-### Spring Reference
-- [Spring Getting Started Guides](https://spring.io/guides#getting-started-guides)
-- [Spring Topical Guides](https://spring.io/guides#topical-guides)
-- [Spring Tutorials](https://spring.io/guides#tutorials)
-- [Gradle Guildes](https://gradle.org/guides/)
 
 
