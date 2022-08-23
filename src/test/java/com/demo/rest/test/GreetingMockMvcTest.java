@@ -1,4 +1,4 @@
-package com.demo.rest.unit;
+package com.demo.rest.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class GreetingMockMvcTest {
 	@Test
 	void testGetGreeting() throws Exception {
 		mockMvc.perform(
-				MockMvcRequestBuilders.post("/greetings").content(asJsonString(new Person("Clinton", "Morrison")))
+				MockMvcRequestBuilders.post("/demo/greetings").content(asJsonString(new Person("Clinton", "Morrison")))
 						.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
 				.andExpect(MockMvcResultMatchers.status().isOk())
 				.andExpect(MockMvcResultMatchers.jsonPath("$.message").exists());

@@ -1,4 +1,4 @@
-package com.demo.rest.unit;
+package com.demo.rest.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -9,13 +9,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.demo.rest.controller.GreetingController;
 
 @SpringBootTest
-public class GreetingContextTest {
+class GreetingContextTest {
 
 	@Autowired
 	private GreetingController controller;
 
 	@Test
-	public void contextLoads() throws Exception {
+	void contextLoads() throws Exception {
 		assertThat(controller).isNotNull();
 	}
 

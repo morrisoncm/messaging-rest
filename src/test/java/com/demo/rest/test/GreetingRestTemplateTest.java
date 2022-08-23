@@ -1,4 +1,4 @@
-package com.demo.rest.unit;
+package com.demo.rest.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,7 +32,7 @@ class GreetingRestTemplateTest {
 
 	@BeforeEach
 	public void Setup() {
-		testUrl = testUrl + port + "/greetings";
+		testUrl = testUrl + port + "/demo/greetings";
 	}
 
 	@Test

@@ -13,7 +13,7 @@ import com.demo.rest.domain.Person;
 import com.demo.rest.service.GreetingService;
 
 @RestController
-@RequestMapping("/greetings")
+@RequestMapping("/demo/greetings")
 public class GreetingController {
 
 	@Autowired
