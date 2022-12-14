@@ -25,6 +25,6 @@ Sample Gradle Spring Boot Rest API with Junit 5.
 
 ### Testing the application
 - The test scripts are under the project root directory in the postman folder
-- Run in Terminal to test **curl --noproxy '*' --location --request POST 'http://127.0.0.1:8080/greetings' --header 'Content-Type: application/json' --data-raw '{"firstname": "Clinton", "lastname": "Morrison"}'**
+- Run in Terminal to test **curl --noproxy '*' --location --request POST 'http://127.0.0.1:8080/demo/greetings' --header 'Content-Type: application/json' --data-raw '{"firstname": "Clinton", "lastname": "Morrison"}'**
 
 
