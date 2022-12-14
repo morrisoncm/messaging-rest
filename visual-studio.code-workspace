@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "messaging-rest",
+			"path": "../messaging-rest"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

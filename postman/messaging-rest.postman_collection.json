@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "e3b8e015-7c26-4da4-88e2-bc5f1adb5747",
+		"name": "messaging-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17031348"
+	},
+	"item": [
+		{
+			"name": "getGreeting",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"Clinton\",\n    \"lastname\": \"Morrison\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/demo/greetings",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"demo",
+						"greetings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
