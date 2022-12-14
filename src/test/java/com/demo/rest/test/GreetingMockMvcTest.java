@@ -18,6 +18,8 @@ public class GreetingMockMvcTest {
 
 	@Autowired
 	private MockMvc mockMvc;
+	
+	public GreetingMockMvcTest() {}
 
 	@Test
 	void testGetGreeting() throws Exception {

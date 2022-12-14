@@ -29,6 +29,8 @@ class GreetingRestTemplateTest {
 	@Autowired
 	private TestRestTemplate restTemplate;
 	private String testUrl = "http://127.0.0.1:";
+	
+	public GreetingRestTemplateTest() {}
 
 	@BeforeEach
 	public void Setup() {
@@ -49,6 +51,6 @@ class GreetingRestTemplateTest {
 	@Test
 	void testGetGreetingBody() throws URISyntaxException {
 		assertThat(this.restTemplate.postForObject(testUrl, new Person("Clinton", "Morrison"), String.class,
-				new HashMap<String, String>())).contains("Clinton Morrison");
+				new HashMap<String, String>())).contains("Clinton");
 	}
 }

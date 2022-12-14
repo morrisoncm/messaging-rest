@@ -1,6 +1,6 @@
 package com.demo.rest.controller;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,4 +23,5 @@ public class GreetingController {
 	public Greeting getGreeting(HttpServletRequest httpServletRequest, @RequestBody Person person) {
 		return greetingService.getGreeting(httpServletRequest.getLocale(), person);
 	}
+
 }
