@@ -24,33 +24,34 @@ import com.demo.rest.domain.Person;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class GreetingRestTemplateTest {
 
-	@LocalServerPort
-	private int port;
-	@Autowired
-	private TestRestTemplate restTemplate;
-	private String testUrl = "http://127.0.0.1:";
-	
-	public GreetingRestTemplateTest() {}
+    @LocalServerPort
+    private int port;
+    @Autowired
+    private TestRestTemplate restTemplate;
+    private String testUrl = "http://127.0.0.1:";
 
-	@BeforeEach
-	public void Setup() {
-		testUrl = testUrl + port + "/demo/greetings";
-	}
+    public GreetingRestTemplateTest() {
+    }
 
-	@Test
-	void testGetGreeting() throws URISyntaxException {
-		var uri = new URI(testUrl);
-		var headers = new HttpHeaders();
-		headers.set("Content-Type", "application/json");
-		var person = new Person("Clinton", "Morrison");
-		var request = new HttpEntity<Person>(person, headers);
-		ResponseEntity<Greeting> result = this.restTemplate.postForEntity(uri, request, Greeting.class);
-		assertEquals(200, result.getStatusCodeValue());
-	}
+    @BeforeEach
+    public void Setup() {
+        testUrl = testUrl + port + "/demo/greetings";
+    }
 
-	@Test
-	void testGetGreetingBody() throws URISyntaxException {
-		assertThat(this.restTemplate.postForObject(testUrl, new Person("Clinton", "Morrison"), String.class,
-				new HashMap<String, String>())).contains("Clinton");
-	}
+    @Test
+    void testGetGreeting() throws URISyntaxException {
+        var uri = new URI(testUrl);
+        var headers = new HttpHeaders();
+        headers.set("Content-Type", "application/json");
+        var person = new Person("Clinton", "Morrison");
+        var request = new HttpEntity<Person>(person, headers);
+        ResponseEntity<Greeting> result = this.restTemplate.postForEntity(uri, request, Greeting.class);
+        assertEquals(200, result.getStatusCodeValue());
+    }
+
+    @Test
+    void testGetGreetingBody() throws URISyntaxException {
+        assertThat(this.restTemplate.postForObject(testUrl, new Person("Clinton", "Morrison"), String.class,
+                new HashMap<String, String>())).contains("Clinton");
+    }
 }

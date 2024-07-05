@@ -16,26 +16,27 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @AutoConfigureMockMvc
 public class GreetingMockMvcTest {
 
-	@Autowired
-	private MockMvc mockMvc;
-	
-	public GreetingMockMvcTest() {}
+    @Autowired
+    private MockMvc mockMvc;
 
-	@Test
-	void testGetGreeting() throws Exception {
-		mockMvc.perform(
-				MockMvcRequestBuilders.post("/demo/greetings").content(asJsonString(new Person("Clinton", "Morrison")))
-						.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
-				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andExpect(MockMvcResultMatchers.jsonPath("$.message").exists());
-	}
+    public GreetingMockMvcTest() {
+    }
 
-	public static String asJsonString(final Object obj) {
-		try {
-			return new ObjectMapper().writeValueAsString(obj);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-	}
+    @Test
+    void testGetGreeting() throws Exception {
+        mockMvc.perform(
+                        MockMvcRequestBuilders.post("/demo/greetings").content(asJsonString(new Person("Clinton", "Morrison")))
+                                .contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").exists());
+    }
+
+    public static String asJsonString(final Object obj) {
+        try {
+            return new ObjectMapper().writeValueAsString(obj);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 }

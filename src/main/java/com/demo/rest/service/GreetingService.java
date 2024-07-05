@@ -7,5 +7,5 @@ import com.demo.rest.domain.Person;
 
 public interface GreetingService {
 
-	Greeting getGreeting(Locale locale, Person person);
+    Greeting getGreeting(Locale locale, Person person);
 }

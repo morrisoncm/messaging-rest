@@ -11,8 +11,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Greeting {
 
-	private String message;
-	private String firstname;
-	private String lastname;
+    private String message;
+    private String firstname;
+    private String lastname;
 
 }

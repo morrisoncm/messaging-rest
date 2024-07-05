@@ -16,12 +16,12 @@ import com.demo.rest.service.GreetingService;
 @RequestMapping("/demo/greetings")
 public class GreetingController {
 
-	@Autowired
-	private GreetingService greetingService;
+    @Autowired
+    private GreetingService greetingService;
 
-	@PostMapping
-	public Greeting getGreeting(HttpServletRequest httpServletRequest, @RequestBody Person person) {
-		return greetingService.getGreeting(httpServletRequest.getLocale(), person);
-	}
+    @PostMapping
+    public Greeting getGreeting(HttpServletRequest httpServletRequest, @RequestBody Person person) {
+        return greetingService.getGreeting(httpServletRequest.getLocale(), person);
+    }
 
 }

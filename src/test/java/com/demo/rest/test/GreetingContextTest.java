@@ -11,12 +11,12 @@ import com.demo.rest.controller.GreetingController;
 @SpringBootTest
 class GreetingContextTest {
 
-	@Autowired
-	private GreetingController controller;
+    @Autowired
+    private GreetingController controller;
 
-	@Test
-	void contextLoads() throws Exception {
-		assertThat(controller).isNotNull();
-	}
+    @Test
+    void contextLoads() throws Exception {
+        assertThat(controller).isNotNull();
+    }
 
 }
