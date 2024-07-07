@@ -15,12 +15,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
     testImplementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-  
+
     compileOnly 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
     testImplementation 'org.projectlombok:lombok:1.18.34'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
-    
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
