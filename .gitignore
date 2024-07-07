@@ -14,4 +14,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .idea/
-/.DS_Store
+**/.DS_Store

@@ -1,23 +1,27 @@
 plugins {
-    id 'java'
+    id 'org.springframework.boot' version '3.3.1'
     id 'eclipse'
     id 'idea'
+    id 'java'
 }
+
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.1'
-    compileOnly 'org.projectlombok:lombok:1.18.26'
-    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-
     testImplementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-    testImplementation 'org.projectlombok:lombok:1.18.26'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.3.1'
+  
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    testImplementation 'org.projectlombok:lombok:1.18.34'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+    
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
 }
