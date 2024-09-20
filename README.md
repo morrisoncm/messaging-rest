@@ -6,8 +6,14 @@ It is a quick guide to get you up and running. It covers the following topics. B
 
 - Clone or download the project
 - To build the application from Terminal / Command Prompt
-- Change directory to the project root directory and type `gradle build`
-- To run the application and type `gradle bootRun`
+- Change directory to the project root directory and type `gradle build` and press enter
+- To run the application and type `gradle bootRun` and press enter
+
+### Testing the application
+
+- To run the tests alone in the root directory type `gradle test` and press enter
+- Download and install postman <https://www.getpostman.com/downloads/>
+- Import the test scripts in the root directory under the folder postman
 
 ### Official Documentation
 
