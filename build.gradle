@@ -12,18 +12,18 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-    testImplementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-
-    compileOnly 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
-    testImplementation 'org.projectlombok:lombok:1.18.34'
+    compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    testImplementation 'org.hamcrest:hamcrest-library:3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
-    testImplementation 'org.hamcrest:hamcrest-library:2.2'
+    testImplementation 'org.projectlombok:lombok:1.18.34'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
